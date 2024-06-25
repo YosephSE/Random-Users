@@ -4,29 +4,7 @@
     <title>Random User Data</title>
 </head>
 <body>
-
-<script>
-    // Function to fetch data from the Random User API
-    function fetchRandomUserData() {
-        const apiURL = 'https://randomuser.me/api/';
-
-        fetch(apiURL)
-            .then(response => response.json())  // Parse the JSON from the response
-            .then(data => {
-                document.write(JSON.stringify(data))
-
-                // Store the data in a variable
-                const userData = data.results[0];
-
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }
-
-    // Call the function to fetch and store data
-    fetchRandomUserData();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
