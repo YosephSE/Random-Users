@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Random User Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .profile-card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .profile-card .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-card .card-title {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .profile-card .card-text {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <button class="btn btn-success"> Hello</button>
-<script src="script.js"></script>
 
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card profile-card">
+                <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="User Image">
+                <div class="card-body">
+                    <h5 class="card-title">Full Name</h5>
+                    <p class="card-text">@username</p>
+                    <p class="card-text">Age: 25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
