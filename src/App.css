@@ -13,17 +13,57 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 10px;
   background: linear-gradient(to right, #037de7, #00f8b6);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 20px;
+  padding: 20px;
 }
+
 .grid-item {
-  background-color: #efc8c8;
-  border: 1px solid #bd5a5a; 
-  padding: 20px; 
-  text-align: center; 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.grid-item p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.grid-item p:first-of-type {
+  font-size: 1.2em;
+  font-weight: bold;
 }
